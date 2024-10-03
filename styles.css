@@ -1,0 +1,50 @@
+/* Apply a global background image */
+body {
+    background: url('images/background.jpeg') no-repeat center center fixed; /* Adjust this if image is in a different folder */
+    background-size: cover;
+    font-family: 'Poppins', sans-serif; /* Use a modern, appealing font */
+    color: #333; /* Set a default text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Style the main content to be centered and readable */
+section.hero {
+    background-color: rgba(255, 255, 255, 0.7); /* Add a white-transparent overlay to make text more readable */
+    padding: 50px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+/* Style for headings (titles) - set to blue */
+h1, h2, h3 {
+    color: blue;
+    margin-bottom: 20px;
+}
+
+/* Button style */
+.cta-btn {
+    background-color: darkorange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    section.hero {
+        width: 90%;
+    }
+}
